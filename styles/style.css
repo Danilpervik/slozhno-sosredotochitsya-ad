@@ -213,7 +213,7 @@
   text-shadow: 2px 2px 0 var(--shadow-color);
 }
 
-@media (min-width: 768px) {
+@media (width>= 768px) {
   :root {
     --padding: 20px;
     --sections-gap: 80px;
@@ -263,7 +263,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (width>= 1024px) {
   .header__theme-menu {
     align-self: start;
     justify-self: center;

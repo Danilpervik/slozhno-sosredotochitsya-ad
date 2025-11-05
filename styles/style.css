@@ -1,5 +1,287 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  margin: 0 auto;
+  font-family: var(--font);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  line-height: var(--line-height);
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.decorated-zone {
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--button-color);
+  border-block-end: 1px solid var(--button-color);
+  inset-inline-start: var(--padding);
+  inset-block-end: var(--padding);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-end: 1px solid var(--button-color);
+  border-block-start: 1px solid var(--button-color);
+  inset-inline-end: var(--padding);
+  inset-block-start: var(--padding);
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr auto;
+  align-items: center;
+  justify-items: end;
+  padding: var(--padding);
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  border: none;
+  padding: 1.5px 13px;
+  background-color: transparent;
+  color: var(--button-color);
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--button-hover-border);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--button-color);
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--button-color);
+  pointer-events: none;
+}
+
+.title {
+  font-weight: var(--header-weight);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: var(--header-color);
+}
+
+.header__title {
+  align-self: center;
+  justify-self: start;
+  text-shadow: 4px 4px 0 var(--shadow-color);
+}
+
+.header__description {
+  align-self: center;
+  justify-self: end;
+  width: 100%;
+  padding: 0;
+  color: var(--article-header-color);
+  background-color: var(--article-background-color);
+  font-weight: var(--header-weight);
+}
+
+.header__rec {
+  position: absolute;
+  visibility: var(--visible);
+  color: var(--button-color);
+  text-transform: uppercase;
+  inset-block-start: var(--padding);
+  inset-inline-end: calc(var(--padding) + 3px + 25px);
+}
+
+.header__rec::after {
+  content: "";
+  position: absolute;
+  visibility: var(--visible);
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: var(--button-color);
+  box-shadow: 0px 0px 4px 2px var(--button-color);
+  inset-inline-end: -18px;
+  inset-block-start: 8px;
+}
+
+.content {
+  display: grid;
+  gap: var(--sections-gap);
+  padding: var(--content-vertical-padding) var(--padding);
+}
+
+.section {
+  display: grid;
+  grid-auto-flow: row;
+  gap: var(--header-articles-gap);
+}
+
+.section__header {
+  font-weight: var(--header-weight);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--section-header-color);
+}
+
+.section__article-list {
+  display: grid;
+  gap: var(--articles-gap);
+}
+
+.article {
+  display: grid;
+  gap: 10px;
+}
+
+.article__header {
+  font-weight: var(--header-weight);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--article-header-color);
+  background-color: var(--article-background-color);
+}
+
+.article__text {
+  font-weight: var(--text-weight);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--text-color);
+}
+
+.research-link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--link-shadow-color);
+}
+
+.research-link:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.research-link:focus {
+  outline: none;
+}
+
+.research-link:focus-visible {
+  outline: 1px solid var(--text-color);
+}
+
+.article__images {
+  display: grid;
+  gap: var(--padding);
+}
+
+.article__images-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding);
+}
+
+.footer__title {
+  text-shadow: 2px 2px 0 var(--shadow-color);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --padding: 20px;
+    --sections-gap: 80px;
+    --content-vertical-padding: 60px;
+  }
+
+  .header__title {
+    margin-inline-start: calc(-1 * var(--padding));
+    justify-self: left;
+  }
+
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__description {
+    width: calc(100% / 2);
+  }
+
+  .why, .how {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .what .section__header {
+    width: calc(100% / 3 - var(--articles-gap));
+  }
+
+  .article__images {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .article__images-image:first-child {
+    grid-column: span 2;
+  }
+
+  .article__images-image:nth-child(2) {
+    grid-row: span 2;
+  }
+
+  .article__images-image:nth-child(3) {
+    grid-row: span 2;
+  }
+
+  .article__images-image:nth-child(5) {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__theme-menu {
+    align-self: start;
+    justify-self: center;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .why, .how {
+    grid-template-columns: calc((100% - 2 * var(--header-articles-gap)) / 3) 1fr;
+  }
+
+  .what .section__article-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .what .section__header {
+    width: 100%;
+  }
 }

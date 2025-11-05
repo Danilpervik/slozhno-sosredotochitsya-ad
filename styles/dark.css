@@ -1,29 +1,41 @@
-.theme-dark.page {
-  --background-color: #000028;
-  --text-color: #f1b2ce;
-  --header-color: #db00ff;
-  --button-color: #ff0070;
-  --section-header-color: #ff0070;
-  --article-background-color: #ff0070;
-  --article-header-color: #000028;
-  --link-shadow-color: #ff0070;
-  --button-hover-border: #ff007066;
-  --background-image: url("../images/cover-image-dark.png");
-  --visible: visible;
+:root.theme-dark {
+  --color-background: #000028;
+  --color-text: #F1B2CE;
+  --color-primary: #DB00FF;
+  --color-accent: #ff0070;
+  --color-accent-transparent: #FF007066;
+  --color-text-dark: #000028;
+  --color-button: #ff0070;
+  --color-button-hover: #FF007066;
+  --color-section-heading: #ff0070;
+  --color-article-background: #ff0070;
+  --color-article-heading: #000028;
+  --color-link-shadow: #ff0070;
+  --color-shadow: #ff0070;
+  --color-rec: #ff0070;
+  --color-border: #ff0070;
+  --background-image: url(../images/cover-image-dark.png);
+  --visibility-rec: visible;
 }
 
 @media (prefers-color-scheme: dark) {
-  .page {
-    --background-color: #000028;
-    --text-color: #f1b2ce;
-    --header-color: #db00ff;
-    --button-color: #ff0070;
-    --section-header-color: #ff0070;
-    --article-background-color: #ff0070;
-    --article-header-color: #000028;
-    --link-shadow-color: #ff0070;
-    --button-hover-border: #ff007066;
-    --background-image: url("../images/cover-image-dark.png");
-    --visible: visible;
+  :root {
+    --color-background: #000028;
+    --color-text: #F1B2CE;
+    --color-primary: #DB00FF;
+    --color-accent: #ff0070;
+    --color-accent-transparent: #FF007066;
+    --color-text-dark: #000028;
+    --color-button: #ff0070;
+    --color-button-hover: #FF007066;
+    --color-section-heading: #ff0070;
+    --color-article-background: #ff0070;
+    --color-article-heading: #000028;
+    --color-link-shadow: #ff0070;
+    --color-shadow: #ff0070;
+    --color-rec: #ff0070;
+    --color-border: #ff0070;
+    --background-image: url(../images/cover-image-dark.png);
+    --visibility-rec: visible;
   }
 }

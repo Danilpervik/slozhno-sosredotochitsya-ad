@@ -155,7 +155,7 @@
 
 .section-answer-title {
   background-color: var(--angle-color);
-  color: var(--par-text-color);
+  color: var(--paragraf-text-color);
   font-size: var(--base-font-size);
   font-weight: 700;
   line-height: var(--base-line-height);

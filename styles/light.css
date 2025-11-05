@@ -7,7 +7,7 @@
   --article-header-color: #353430;
   --article-background-color: #ff8dcb;
   --link-shadow-color: #ff8dcb;
-  --button-hover-border: rgba(50, 49, 45, 0.4);
+  --button-hover-border: #32312d66;
   --background-image: url("../images/cover-image-light.png");
   --visible: hidden;
 }
@@ -22,7 +22,7 @@
     --article-header-color: #353430;
     --article-background-color: #ff8dcb;
     --link-shadow-color: #ff8dcb;
-    --button-hover-border: rgba(50, 49, 45, 0.4);
+    --button-hover-border: #32312d66;
     --background-image: url("../images/cover-image-light.png");
     --visible: hidden;
   }

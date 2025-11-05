@@ -5,10 +5,10 @@
   --after-color: #ff0070;
   --background-image: url(../images/cover-image-dark.png);
   --header__title-color: #DB00FF;
-  --paragraf-text-color: #000028;
+  --par-text-color: #000028;
   --text-color: #F1B2CE;
   --rec-color: #ff0070;
-  --background-color: #000028;
+  --bg-color: #000028;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,9 +19,9 @@
     --after-color: #ff0070;
     --background-image: url(../images/cover-image-dark.png);
     --header__title-color: #DB00FF;
-    --paragraf-text-color: #000028;
+    --par-text-color: #000028;
     --text-color: #F1B2CE;
     --rec-color: #ff0070;
-    --background-color: #000028;
+    --bg-color: #000028;
   }
 }

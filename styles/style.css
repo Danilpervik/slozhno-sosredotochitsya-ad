@@ -4,7 +4,7 @@
   font-size: var(--base-font-size);
   font-weight: 400;
   line-height: var(--base-line-height);
-  background-color: var(--bg-color);
+  background-color: var(--page-bg-color);
   background-attachment: fixed;
 }
 
@@ -39,13 +39,13 @@
   background: transparent;
   border: none;
   font-size: var(--base-font-size);
-  color: var(--button-color);
+  color: var(--button-text-color);
   text-align: center;
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--button-color);
+  border: 1px solid var(--button-text-color);
 }
 
 .header__theme-menu-button:focus {
@@ -55,11 +55,11 @@
 .header__theme-menu-button:focus-visible {
   border: none;
   outline: none;
-  border-bottom: 1px solid var(--button-color);
+  border-bottom: 1px solid var(--button-text-color);
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--border-button-color);
+  border: 1px solid var(--button-border-hover);
 }
 
 .decor {
@@ -82,17 +82,17 @@
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
-  background-color: var(--after-color);
-  fill: var(--after-color);
-  filter: drop-shadow(0px 0px 4px var(--after-color));
+  background-color: var(--rec-visibility);
+  fill: var(--rec-visibility);
+  filter: drop-shadow(0px 0px 4px var(--rec-visibility));
 }
 .decorated-zone::before {
   position: absolute;
   top: 0;
   right: 0;
   content: "";
-  border-top: 1px solid var(--button-color);
-  border-right: 1px solid var(--button-color);
+  border-top: 1px solid var(--button-text-color);
+  border-right: 1px solid var(--button-text-color);
   inline-size: 25px;
   block-size: 25px;
   margin: 10px;
@@ -103,8 +103,8 @@
   bottom: 0;
   left: 0;
   content: "";
-  border-bottom: 1px solid var(--button-color);
-  border-left: 1px solid var(--button-color);
+  border-bottom: 1px solid var(--button-text-color);
+  border-left: 1px solid var(--button-text-color);
   inline-size: 25px;
   block-size: 25px;
   margin: 10px;
@@ -113,8 +113,8 @@
 .header__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.83;
-  text-shadow: 4px 4px 0 var(--angle-color);
-  color: var(--header__title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--title-color);
   margin-left: 0;
   font-weight: 700;
 }
@@ -123,10 +123,10 @@
   justify-self: end;
   align-self: center;
   font-weight: 700;
-  background-color: var(--angle-color);
+  background-color: var(--accent-color);
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
-  color: var(--par-text-color);
+  color: var(--accent-bg-color);
   max-inline-size: 355px;
   max-block-size: 117px;
 }
@@ -140,7 +140,7 @@
 }
 
 .section-title {
-  color: var(--button-color);
+  color: var(--button-text-color);
   font-weight: 700;
   line-height: var(--base-line-height);
   font-size: var(--base-font-size);
@@ -154,24 +154,24 @@
 
 .section-answer-title {
   font-weight: 700;
-  background-color: var(--angle-color);
+  background-color: var(--accent-color);
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
-  color: var(--par-text-color);
+  color: var(--accent-bg-color);
 }
 
 .section-answer-text {
   font-size: var(--base-font-size);
-  color: var(--text-color);
+  color: var(--main-text-color);
 }
 
 .section-link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--angle-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .section-link:hover {
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--main-text-color);
 }
 
 .section-link:focus {
@@ -179,7 +179,7 @@
 }
 
 .section-link:focus-visible {
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--main-text-color);
 }
 
 .section_second {
@@ -198,10 +198,10 @@
 .section-answer-subtitle {
   font-weight: 400;
   margin: 10px 0;
-  background-color: var(--angle-color);
+  background-color: var(--accent-color);
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
-  color: var(--par-text-color);
+  color: var(--accent-bg-color);
 }
 
 .section-image__container {
@@ -232,8 +232,8 @@
 .footer__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.83;
-  text-shadow: 4px 4px 0 var(--angle-color);
-  color: var(--header__title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--title-color);
   margin-left: 0;
   font-weight: 700;
   height: 100%;

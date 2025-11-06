@@ -1,14 +1,14 @@
 .page {
-  font-family: var(--base-font-family);
+  font-family: var(--global-font-family);
   margin: 0 auto;
   background-attachment: fixed;
   font-weight: 400;
-  line-height: var(--base-line-height);
+  line-height: var(--global-line-height);
   background-color: var(--page-bg-color);
-  font-size: var(--base-font-size);
+  font-size: var(--global-font-size);
 }
 
-.decor {
+.rec {
   text-align: center;
   position: absolute;
   margin: 10px;
@@ -22,7 +22,7 @@
   right: 0;
 }
 
-.decor::after {
+.rec::after {
   background-color: var(--rec-visibility);
   display: block;
   block-size: 9px;
@@ -83,7 +83,7 @@
 }
 
 .header__theme-menu-button {
-  font-size: var(--base-font-size);
+  font-size: var(--global-font-size);
   text-align: center;
   padding: 0 13px;
   border: none;
@@ -124,10 +124,10 @@
   max-block-size: 117px;
   color: var(--accent-bg-color);
   justify-self: end;
-  line-height: var(--base-line-height);
+  line-height: var(--global-line-height);
   max-inline-size: 355px;
   align-self: center;
-  font-size: var(--base-font-size);
+  font-size: var(--global-font-size);
   background-color: var(--accent-color);
 }
 
@@ -141,8 +141,8 @@
 
 .section-title {
   font-weight: 700;
-  font-size: var(--base-font-size);
-  line-height: var(--base-line-height);
+  font-size: var(--global-font-size);
+  line-height: var(--global-line-height);
   color: var(--button-text-color);
 }
 
@@ -154,15 +154,15 @@
 
 .section-answer-title {
   font-weight: 700;
-  line-height: var(--base-line-height);
-  font-size: var(--base-font-size);
+  line-height: var(--global-line-height);
+  font-size: var(--global-font-size);
   color: var(--accent-bg-color);
   background-color: var(--accent-color);
 }
 
 .section-answer-text {
   color: var(--main-text-color);
-  font-size: var(--base-font-size);
+  font-size: var(--global-font-size);
 }
 
 .section-link {
@@ -197,8 +197,8 @@
 
 .section-answer-subtitle {
   font-weight: 400;
-  line-height: var(--base-line-height);
-  font-size: var(--base-font-size);
+  line-height: var(--global-line-height);
+  font-size: var(--global-font-size);
   margin: 10px 0;
   color: var(--accent-bg-color);
   background-color: var(--accent-color);
@@ -265,7 +265,7 @@
     margin: 20px;
   }
 
-  .decor {
+  .rec {
     margin: 20px;
   }
   
